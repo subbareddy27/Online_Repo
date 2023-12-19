@@ -1,0 +1,50 @@
+<div class="container mt-3">
+    <div class="card-header">
+        <h2 style="text-align: center;
+        background-color: aquamarine;
+        color: white;
+        margin: 0px 0px 50px 50px ;">
+        Online Register Application</h2>
+    </div>
+    <div class="card">
+       <form [formGroup]="AddedData" (ngSubmit)="onSubmit()">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" id="firstname" name="firstname"  placeholder="First name" formControlName="firstname">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="lastname" name="lastname"  placeholder="Last name" formControlName="lastname">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <button class="btn btn-primary btn-md" value="button" type="submit">Submit</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-info btn-md" type="cancal">Cancal</button>
+                </div>
+            </div>
+        </div>
+       </form>
+    </div>
+</div>
+<!-- {{display | json}} -->
+
+<div class="container mt-3">
+<table class="table">
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let d of data">
+            <td>{{d.firstname}}</td>
+            <td>{{d.lastname}}</td>
+            
+        </tr>
+    </tbody>
+</table>
+</div>

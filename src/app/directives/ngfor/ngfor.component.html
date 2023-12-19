@@ -1,0 +1,28 @@
+<!-- <div *ngFor="let item of [1 , 2 , 4 , 16, 64 ,5 , 25]">
+       
+           <p> Number of : -> {{item}}</p>
+      
+</div> -->
+<!-- ['a , b , c , b , d , e , f , h'] -->
+
+
+
+<table class="table table-hover container mt-3">
+   <thead>
+    <tr>
+        <th>UserId</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Body</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr *ngFor="let data of Products">
+        <td>{{data.userId}}</td>
+        <td>{{data.id}}</td>
+        <td>{{data.title}}</td>
+        <td>{{data.body}}</td>
+    </tr>
+   </tbody>
+
+</table>

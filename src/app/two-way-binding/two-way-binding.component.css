@@ -1,0 +1,9 @@
+.alert-msg{
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+.bg{
+    background-color: rgb(30, 186, 137);
+    color: white;
+}

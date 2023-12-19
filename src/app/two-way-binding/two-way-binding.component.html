@@ -1,0 +1,19 @@
+<div class="container mt-3">
+    <div class="card">
+        <div class="col">
+            <div class="card-body" [ngClass]="{bg  : _EmpName != ''}">
+                <input type="text" class="form-control" placeholder="***Search***" [(ngModel)]="_EmpName">
+            </div>
+        </div>
+    </div>
+    <div  class="alert-msg mt-5 container">
+        <span class="alert alert-success text-center" *ngIf="_EmpName != ''">You Searched for : "{{_EmpName}}"</span>
+    </div>
+</div>
+
+<br>
+<!-- <div class="container mt-3">
+    <tr *ngFor="let data of _arrayData">
+        <td>{{data}}</td>
+    </tr>
+</div> -->

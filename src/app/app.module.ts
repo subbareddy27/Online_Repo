@@ -14,6 +14,8 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { NgforComponent } from './directives/ngfor/ngfor.component';
 import { CrudComponent } from './crud/crud.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { CoursesComponent } from './decorator/courses/courses.component';
+import { HeadersComponent } from './decorator/headers/headers.component';
 
 
 @NgModule({
@@ -28,7 +30,10 @@ import { NgForComponent } from './ng-for/ng-for.component';
     TwoWayBindingComponent,
     NgforComponent,
     CrudComponent,
-    NgForComponent
+    NgForComponent,
+    CoursesComponent,
+    HeaderComponent,
+    HeadersComponent
   ],
   imports: [
     BrowserModule,
